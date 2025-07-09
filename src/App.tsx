@@ -92,7 +92,7 @@ export default function App() {
           <input
             type="submit"
             value="Cadastrar"
-            className="w-full cursor-pointer rounded bg-green-500 p-2 font-medium"
+            className="w-full cursor-pointer rounded transition hover:bg-green-700 bg-green-500 p-2 font-medium"
           />
         </form>
 
@@ -106,7 +106,7 @@ export default function App() {
               <p><span className="font-medium">Email:</span> {customer.email}</p>
               <p><span className="font-medium">Status:</span> {customer.status ? "ATIVO" : "INATIVO"}</p>
 
-              <button onClick={() => handleDelete(customer.id)} className="cursor-pointer -top-2 right-0 bg-red-500 w-7 h-7 absolute flex items-center rounded-lg justify-center">
+              <button onClick={() => handleDelete(customer.id)} className=" cursor-pointer -top-2 right-0 bg-red-500 w-7 h-7 absolute flex items-center rounded-lg justify-center">
                 <FiTrash size={18} color="#fff" />
               </button>
             </article>
